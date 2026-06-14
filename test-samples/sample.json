@@ -1,0 +1,36 @@
+{
+  "level0_theme": {
+    "level1_name": "Sapphire Moonlight",
+    "level1_version": "1.0.0",
+    "level1_settings": {
+      "level2_editor": {
+        "level3_colors": {
+          "level4_background": "#1b1e23",
+          "level4_foreground": "#f8f8f2",
+          "level4_tokens": {
+            "level5_keywords": {
+              "level6_color": "#dcc6e0",
+              "level6_scope": ["keyword", "storage.type"],
+              "level6_nested": {
+                "level7_fontStyle": "normal",
+                "level7_deep": {
+                  "level8_final": "This is level 8 nesting"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "level1_numbers": [42, 3.14, -1, 0, 100],
+    "level1_booleans": [true, false],
+    "level1_null": null,
+    "level1_string_types": {
+      "level2_plain": "hello world",
+      "level2_with_unicode": "caf\u00e9 \u2603 \u2764",
+      "level2_with_url": "https://example.com/path?q=search",
+      "level2_empty": "",
+      "level2_multiword": "the quick brown fox jumps over the lazy dog"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+<!-- ============================================ -->
+<!-- Theme Check: HTML                           -->
+<!-- ============================================ -->
+<!-- - Tags (div, a, img, etc.)                  -->
+<!-- - Attributes (general + HTML specific)      -->
+<!-- - Punctuation (< > = / )                    -->
+<!-- - Embedded (style, script sections)         -->
+<!-- - Entities                                  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Theme Color Check</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1b1e23;
+      color: #f8f8f2;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    #main-title {
+      font-size: 2rem;
+      color: #00e0e0;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="app">
+    <h1 id="main-title">Sapphire Moonlight</h1>
+    <p class="description" data-theme="dark">
+      A beautiful dark theme for VS Code.
+    </p>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="https://example.com" target="_blank" rel="noopener">Home</a></li>
+        <li><a href="#about" title="About section">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="about">
+      <h2>About</h2>
+      <img src="logo.png" alt="Logo" width="200" height="100" loading="lazy">
+      <p>Special characters: &amp; &lt; &gt; &quot; &copy;</p>
+    </section>
+
+    <form action="/submit" method="post" enctype="multipart/form-data">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required placeholder="Enter name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <select name="role" id="role">
+        <option value="user">User</option>
+        <option value="admin" selected>Admin</option>
+      </select>
+
+      <textarea name="message" rows="4" cols="50"></textarea>
+      <button type="submit" disabled>Submit</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr><th>Name</th><th>Value</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Color</td><td>#00e0e0</td></tr>
+        <tr><td>Font</td><td>Monospace</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const app = document.getElementById('app');
+      console.log('Theme loaded:', app.dataset.theme);
+    });
+  </script>
+</body>
+</html>

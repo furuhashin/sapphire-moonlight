@@ -1,0 +1,72 @@
+# ============================================
+# Theme Check: YAML
+# ============================================
+# - Keys (entity.name.tag)
+# - Strings (single / double / plain / block)
+# - Numbers / Booleans / Null
+# - Anchors (&) and Aliases (*)
+# - Tags (!!type)
+# - Comments
+# - Nested mappings & sequences
+
+# --- Scalars ---
+name: Sapphire Moonlight
+version: 1.0.0
+enabled: true
+disabled: false
+empty_value: null
+count: 42
+pi: 3.14159
+hex: 0xFF
+
+# --- Strings ---
+plain_string: hello world
+single_quoted: 'single quoted string'
+double_quoted: "double quoted with \n escape"
+multiline_literal: |
+  Line one
+  Line two
+  preserved newlines
+multiline_folded: >
+  This long text
+  is folded into
+  a single line.
+
+# --- Sequences ---
+colors:
+  - "#00e0e0"
+  - "#ffd900"
+  - "#abe338"
+
+ports: [8080, 8443, 9000]
+
+# --- Nested mappings ---
+theme:
+  editor:
+    background: "#1b1e23"
+    foreground: "#f8f8f2"
+    tokens:
+      keyword: "#dcc6e0"
+      function: "#00e0e0"
+
+# --- Anchors & aliases ---
+defaults: &defaults
+  adapter: postgres
+  host: localhost
+
+development:
+  <<: *defaults
+  database: dev_db
+
+production:
+  <<: *defaults
+  database: prod_db
+
+# --- Explicit tags ---
+explicit_string: !!str 12345
+explicit_float: !!float 1
+binary_data: !!binary SGVsbG8=
+
+# --- Inline (flow) style ---
+inline_map: { name: Alice, age: 30 }
+inline_list: [a, b, c]
