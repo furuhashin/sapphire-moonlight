@@ -34,7 +34,7 @@ An accessible, high-contrast dark theme for VS Code — tuned for readability an
 
 ## Preview
 
-[Sapphire Moonlight preview](images/preview.png)
+![Sapphire Moonlight preview](images/preview.png)
 
 Sample files for every supported language live in [`test-samples/`](test-samples/) (JS, TS, Python, Go, Ruby, PHP, CSS, HTML, JSON, Markdown, YAML, Shell, Rust, SQL) — handy for seeing the theme in action.
 
