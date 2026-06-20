@@ -15,7 +15,7 @@
 		{
 			"name": "Comments",
 			"scope": ["comment", "punctuation.definition.comment"],
-			"settings": { "foreground": "#5fc99a", "fontStyle": "italic" }
+			"settings": { "foreground": "#4c9474", "fontStyle": "italic" }
 		},
 		{
 			"name": "Keywords",
@@ -31,12 +31,12 @@
 		{
 			"name": "Operators",
 			"scope": ["keyword.operator"],
-			"settings": { "foreground": "#9fc15e" }
+			"settings": { "foreground": "#3ed4d4" }
 		},
 		{
 			"name": "Functions",
 			"scope": ["entity.name.function", "support.function", "meta.function-call", "variable.function"],
-			"settings": { "foreground": "#4fc4c4" }
+			"settings": { "foreground": "#3ed4d4" }
 		},
 		{
 			"name": "Types and Classes",
@@ -46,6 +46,11 @@
 		{
 			"name": "Variables",
 			"scope": ["variable", "variable.other"],
+			"settings": { "foreground": "#b09ffa" }
+		},
+		{
+			"name": "Variable Sigils (PHP $, Ruby @ / @@)",
+			"scope": ["punctuation.definition.variable.php", "punctuation.definition.variable.ruby"],
 			"settings": { "foreground": "#b09ffa" }
 		},
 		{
@@ -67,6 +72,16 @@
 			"name": "Escape Characters",
 			"scope": ["constant.character.escape"],
 			"settings": { "foreground": "#9fc15e" }
+		},
+		{
+			"name": "Template / Interpolation Placeholders",
+			"scope": [
+				"punctuation.definition.template-expression.begin",
+				"punctuation.definition.template-expression.end",
+				"punctuation.definition.interpolation.begin",
+				"punctuation.definition.interpolation.end"
+			],
+			"settings": { "foreground": "#ffa07a" }
 		},
 		{
 			"name": "Regular Expressions",
@@ -96,7 +111,7 @@
 		{
 			"name": "Tags",
 			"scope": ["entity.name.tag"],
-			"settings": { "foreground": "#4fc4c4" }
+			"settings": { "foreground": "#3ed4d4" }
 		},
 		{
 			"name": "Attributes",
@@ -121,12 +136,12 @@
 		{
 			"name": "Markdown Headings",
 			"scope": ["heading.1.markdown", "heading.2.markdown", "heading.3.markdown", "heading.4.markdown", "heading.5.markdown", "heading.6.markdown", "markup.heading"],
-			"settings": { "foreground": "#4fc4c4", "fontStyle": "bold" }
+			"settings": { "foreground": "#3ed4d4", "fontStyle": "bold" }
 		},
 		{
 			"name": "Markdown Heading Punctuation",
 			"scope": ["punctuation.definition.heading.markdown"],
-			"settings": { "foreground": "#4fc4c4", "fontStyle": "bold" }
+			"settings": { "foreground": "#3ed4d4", "fontStyle": "bold" }
 		},
 		{
 			"name": "Markdown Bold",

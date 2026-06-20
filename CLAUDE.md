@@ -4,14 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Sapphire Moonlight** is a VS Code color theme extension focused on accessibility and readability (formerly "A11y Sapphire Moon"; the `a11y` framing now lives in the package keywords/description rather than the name). It provides a high-contrast dark theme ("Sapphire Moonlight") with signature sapphire cyan for functions (muted `#4fc4c4` text; vivid `#00e0e0` kept on the status bar) and golden-yellow (`#e8c44e`) for types. Syntax colors are deliberately kept at moderate chroma to avoid halation/eye strain on the dark background.
+**Sapphire Moonlight** is a VS Code color theme extension focused on accessibility and readability (formerly "A11y Sapphire Moon"; the `a11y` framing now lives in the package keywords/description rather than the name). It provides a high-contrast dark theme ("Sapphire Moonlight") with signature sapphire cyan for functions (`#3ed4d4` text; vivid `#00e0e0` kept on the status bar) and golden-yellow (`#e8c44e`) for types. Syntax colors are deliberately kept at moderate chroma to avoid halation/eye strain on the dark background.
 
 ## Architecture
 
 This is a theme-only VS Code extension — no TypeScript/JavaScript code, no build step, no tests.
 
 - `themes/Sapphire Moonlight-color-theme.json` — The main theme definition (UI colors + token colors)
-- `test-samples/` — Sample files (JS, TS, HTML, CSS, JSON, Python, Markdown, MoonBit) for visually testing the theme
+- `test-samples/` — Sample files (JS, TS, Python, Go, Ruby, PHP, HTML, CSS, JSON, Markdown, YAML, Shell, Rust, SQL) for visually testing the theme
 - `package.json` — Extension manifest; registers the theme under `contributes.themes`
 
 ## Development
@@ -27,9 +27,9 @@ npx @vscode/vsce package
 
 | Token          | Color     |
 |----------------|-----------|
-| Functions      | `#4fc4c4` (muted cyan) — status bar keeps vivid `#00e0e0` |
+| Functions      | `#3ed4d4` (sapphire cyan; also tags & MD headings) — status bar keeps vivid `#00e0e0` |
 | Types/Classes  | `#e8c44e` (muted gold) |
-| Comments       | `#5fc99a` italic (muted green) |
+| Comments       | `#4c9474` italic (subdued green, AA floor) |
 | Keywords       | `#dcc6e0` (lavender) |
 | Variables      | `#b09ffa` (soft purple) |
 | Strings/Operators | `#9fc15e` (muted lime) |
