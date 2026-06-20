@@ -40,6 +40,6 @@ Sample files for every supported language live in [`test-samples/`](test-samples
 
 ## License
 
-See [LICENSE](LICENSE) if present, otherwise all rights reserved by the author.
+Released under the [MIT License](LICENSE).
 
 **Enjoy!** 🌙
