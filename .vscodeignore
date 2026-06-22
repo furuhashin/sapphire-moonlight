@@ -4,3 +4,6 @@
 vsc-extension-quickstart.md
 test-samples/**
 CLAUDE.md
+.DS_Store
+**/.DS_Store
+images/*.svg

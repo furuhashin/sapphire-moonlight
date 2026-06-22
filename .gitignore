@@ -1,4 +1,6 @@
 node_modules
 *.vsix
 .env
+.DS_Store
+**/.DS_Store
   

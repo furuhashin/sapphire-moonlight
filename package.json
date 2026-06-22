@@ -1,6 +1,8 @@
 {
   "name": "sapphire-moonlight",
+  "publisher": "furuhashin",
   "displayName": "Sapphire Moonlight",
+  "icon": "images/icon.png",
   "description": "An accessible, high-contrast dark theme tuned for readability and reduced eye strain. Sapphire cyan for functions and golden-yellow for types, with WCAG AA+ contrast and color-blind-aware, low-halation syntax colors.",
   "version": "0.0.1",
   "license": "MIT",
